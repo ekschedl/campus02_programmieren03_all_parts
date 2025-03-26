@@ -19,7 +19,7 @@ public class ue_3 {
     Directory: C:\Users\n50348\Desktop\losewljhol*/
     public static void listFilesAndDirectoriesWithSubFolders(String path) {
         File root = new File(path);
-        File[] list = root.listFiles(test);
+        File[] list = root.listFiles();
 
         if (list == null) return;
 
