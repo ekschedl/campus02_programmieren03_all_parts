@@ -1,15 +1,44 @@
+import java.io.File;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        readFileInformation("/Users/kaaatkina/CAMPUS02_2025/FUCHS/Programmieren3/test.txt");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    }
+
+    public static void readFileInformation(String fileString) {
+        File f = new File(fileString);
+
+        // Does this file exist?
+        System.out.println("Does the file exist? \t" + f.exists());
+
+        // Name of the File
+        System.out.println("Name of the file? \t\t" + f.getName());
+
+        // Parent Directory of the File
+        System.out.println("Parent Directory \t\t" + f.getParent());
+
+        // Absolute Path to this File
+        System.out.println("Absolute Path \t\t\t" + f.getAbsolutePath());
+
+        // Is this a directory
+        System.out.println("Is this a directory? \t" + f.isDirectory());
+
+        //Is this a file
+        System.out.println("Is this a file? \t\t" + f.isFile());
+
+        //Is this file readable
+        System.out.println("Is this file readable? \t" + f.canRead());
+
+        //Is this file writeable
+        System.out.println("Is this file writeable? " + f.canWrite());
+
+        // File Size
+        System.out.println("File Size: \t\t\t\t" + f.length() + " bytes");
+
     }
 }
+
+//System.lineSeparator();
