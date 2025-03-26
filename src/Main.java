@@ -4,7 +4,10 @@ import java.io.File;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        readFileInformation("/Users/kaaatkina/CAMPUS02_2025/FUCHS/Programmieren3/test.txt");
+        // readFileInformation("/Users/kaaatkina/CAMPUS02_2025/FUCHS/Programmieren3/test.txt");
+        listFilesAndDirectoriesWithSubFolders("/Users/kaaatkina/CAMPUS02_2025/Projekt_1");
+
+
 
     }
 
@@ -39,6 +42,25 @@ public class Main {
         System.out.println("File Size: \t\t\t\t" + f.length() + " bytes");
 
     }
-}
+
+    public static void listFilesAndDirectoriesWithSubFolders(String path) {
+        File root = new File(path);
+        File[] list = root.listFiles();
+
+        if (list == null) return;
+
+        for (File f : list) {
+            if (f.isDirectory()) {
+                // rekursiver Aufruf
+                System.out.println("Directory: " + f.getAbsolutePath());
+                listFilesAndDirectoriesWithSubFolders(f.getAbsolutePath());
+            } else {
+                System.out.println("File: " + f.getAbsolutePath());
+            }
+        }
+
+    }}
+
+
 
 //System.lineSeparator();
