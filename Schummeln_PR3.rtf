@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+\f3\fnil\fcharset0 .SFNS-Bold;\f4\fnil\fcharset0 .AppleSystemUIFontMonospaced-Bold;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;\red0\green0\blue0;\red50\green91\blue97;
+\red151\green0\blue126;\red181\green0\blue19;\red20\green0\blue196;\red13\green100\blue1;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;\csgray\c0;\cssrgb\c24706\c43137\c45490;
+\cssrgb\c66667\c5098\c56863;\cssrgb\c76863\c10196\c8627;\cssrgb\c10980\c0\c81176;\cssrgb\c0\c45490\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 Du gibst text.txt in Zahlen aus \uc0\u8594  
+\f1\b das ist die Dezimalform des Textes
+\f0\b0 .\
+\
+
+\f2\fs26 \cf3  File \cf4 file\cf3  = \cf5 new\cf3  File(\cf6 "beispiel.txt"\cf3 );\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+        FileReader \cf4 reader\cf3  = \cf5 new\cf3  FileReader(file);\
+        int zeichen;\
+\
+        \cf5 while\cf3  ((zeichen = reader.read()) != -\cf7 1\cf3 ) \{\
+            System.out.println(zeichen); \cf8 // gibt ASCII-Wert = dezimale Zahl\cf3 \
+        \}\
+\
+        reader.close();\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f3\b\fs30 \cf2 Beispielcode: Dezimalzahlen in Text umwandeln
+\f2\b0\fs26 \cf3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+int[] zahlen = \{\cf7 72\cf3 , \cf7 97\cf3 , \cf7 108\cf3 , \cf7 108\cf3 , \cf7 111\cf3 \};  \cf8 // ASCII-Werte\cf3 \
+        StringBuilder \cf4 sb\cf3  = \cf5 new\cf3  StringBuilder();\
+\
+        \cf5 for\cf3  (int zahl : zahlen) \{\
+            sb.append((char) zahl);  \cf8 // ASCII \uc0\u8594  Zeichen\cf3 \
+        \}\
+\
+        System.out.println(\cf6 "Text: "\cf3  + sb.toString());\
+    \}\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+
+\f4\b Mit input
+\f2\b0 \
+Scanner \cf4 scanner\cf3  = \cf5 new\cf3  Scanner(System.in);\
+\
+        System.out.println(\cf6 "Gib die ASCII-Zahlen ein (z.\uc0\u8239 B. 72 97 108 108 111):"\cf3 );\
+        String \cf4 eingabe\cf3  = scanner.nextLine();  \cf8 // Eingabe als String\cf3 \
+        String[] teile = eingabe.split(\cf6 " "\cf3 );  \cf8 // Trennen bei Leerzeichen\cf3 \
+\
+        StringBuilder \cf4 sb\cf3  = \cf5 new\cf3  StringBuilder();\
+\
+        \cf5 for\cf3  (String teil : teile) \{\
+            \cf5 try\cf3  \{\
+                int \cf4 zahl\cf3  = Integer.parseInt(teil); \cf8 // String \uc0\u8594  Zahl\cf3 \
+                sb.append((char) zahl);           \cf8 // Zahl \uc0\u8594  Buchstabe\cf3 \
+            \} \cf5 catch\cf3  (NumberFormatException e) \{\
+                System.out.println(\cf6 "\uc0\u10060  Ung\'fcltige Zahl: "\cf3  + teil);\
+            \}\
+        \}\
+ System.out.println(\cf6 "\uc0\u10145 \u65039  Ergebnis: "\cf3  + sb.toString());}
