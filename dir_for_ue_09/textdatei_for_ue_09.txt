@@ -1,0 +1,5 @@
+Hallo Welt
+Ich liebe Sommer
+Text mit write() ← das ist ohne Zeilenumbruch
+Text mit println()
+← das ist mit Zeilenumbruch
