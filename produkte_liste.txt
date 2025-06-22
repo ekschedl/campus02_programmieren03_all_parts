@@ -1,0 +1,5 @@
+Apfel;0.89;Obst
+Brot;2.49;Backwaren
+Milch;1.19;Getränke
+Zahnpasta;3.79;Drogerie
+Käse;2.99;Milchprodukte

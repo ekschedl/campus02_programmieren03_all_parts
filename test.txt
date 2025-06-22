@@ -1,3 +1,0 @@
-Product{productName='Laptop2', price=12000.0, productCategory='Electronics2'}
-Product{productName='Laptop2', price=12000.0, productCategory='Electronics2'}
-Product{productName='Laptop2', price=12000.0, productCategory='Electronics2'}
