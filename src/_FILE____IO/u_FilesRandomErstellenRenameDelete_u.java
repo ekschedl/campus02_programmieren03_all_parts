@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class FilesRandomErstellenRenameDelete_u {
+public class u_FilesRandomErstellenRenameDelete_u {
 
     public static void main(String[] args) {
         /*

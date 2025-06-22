@@ -2,7 +2,7 @@ package _FILE____IO;
 
 import java.io.File;
 
-public class AnzeigeFilesUndDirectory_u {
+public class u_AnzeigeFilesUndDirectory_u {
     public static void main(String[] args) {
         // Provide full path for directory(change
         // accordingly)

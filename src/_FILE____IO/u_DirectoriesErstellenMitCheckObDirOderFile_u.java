@@ -3,7 +3,7 @@ package _FILE____IO;
 
 import java.io.File;
 
-public class DirectoriesErstellenMitCheckObDirOderFile_u {
+public class u_DirectoriesErstellenMitCheckObDirOderFile_u {
     //    Tip: use mkdirs()
 //    Write a method, which creates multiple directories. Example: "C:\\campus02\\test\\demo4" (Campus, Test, Demo4 will be created)
 //            - It should also be checked, if the given directory has been created -> print it to the console:

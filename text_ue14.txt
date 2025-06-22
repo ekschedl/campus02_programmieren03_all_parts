@@ -1,0 +1,4 @@
+Hello World, Übung 14 
+Was ist passiert?
+
+Du hast mit FileOutputStream.write(char) direkt Zeichen (z./B. "Übung") als einzelne Bytes geschrieben. Dabei wird nur das niedrigste Byte jedes Zeichens gespeichert  was bei Sonderzeichen wie Ü nicht ausreicht, weil sie mehrere Bytes brauchen (z./B. in UTF-8)

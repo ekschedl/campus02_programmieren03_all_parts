@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class
-AACheatSheetFile_u {
+u_AACheatSheetFile_u {
     public static void main(String[] args) {
 
         //------CREATE A FILE-----

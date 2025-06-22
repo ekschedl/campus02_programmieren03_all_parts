@@ -1,4 +1,4 @@
-package ue_15;
+package _FILE____IO.ue_15;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class ue_15_printstream {
 
         File file1 = new File("test15_printstream.txt");
         PrintStream printstream = new PrintStream(file1);
-        String output1 = "Das ist ein Test";
+        String output1 = "Das ist ein Test üüüü";
         printstream.println(output1);
 
         printstream.flush();

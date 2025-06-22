@@ -1,7 +1,7 @@
 package _FILE____IO;
 
 import java.io.File;
-public class FileMitAttributenUndSpeicherplatzInKonsole_u {
+public class u_FileMitAttributenUndSpeicherplatzInKonsole_u {
 
     public static void main(String[] args) {
         /*
