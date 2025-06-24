@@ -1,0 +1,620 @@
+CAMPUS
+INHALT > LERNZIELE
+® Konzepte zur Fehlerbehandlung von Java / JVM @ Griinde / Vorteile fiir Exception Mechanismus
+> Errors zur Fehlerbehandlung nennen kénnen
+
+> (un)checked Exceptions
+
+© Exceptions ® spezifische Exceptions definieren konnen
+
+> ausldsen (,werfen“), behandeln fangen @ Exceptions im Fehlerfall ausl6sen sowie
+
+> Schlisselwérter: try, catch, finally, throw/s geeignet behandeln kénnen
+
+> StrackTraces verstehen und interpretieren
+
+> Exception Hierarchie & Typen @ Unterschied zwischen checked und unchecked
+> Exception Chaining Exceptions erklaren und richtig einsetzen
+
+EXCEPTIONS nae 4 EXCEPTIONS
+
+@ Was sind ,,Exceptions“? @ Bsp. fiir bereits kennengelernte Exceptions:
+
+> Ausnahmesituationen die im normalen bzw .
+geplanten Programmablauf auftreten k6nnen
+
+public class DemoExceptions {
+
+public static void main(String{] args) {
+
+> Zustande die verhindern , dass das Programm int =10;
+seiner Aufgabe ungehindert nachkommen kann wise
+
+> salopp formuliert: Fehler unterschiedlichster Art ‘
+
+public static int doDivision(int i1, int i2) {
+return it / i2;
+;
+
+System.out.printin(doDivision(a, b));
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+) at exceptions.DemoExceptions.doDivision(DemoExceptions.java:15)
+at exceptions.DemoExceptions.main(DemoExceptions.java:10)
+
+
+
+EXCEPTIONS
+
+@ Bsp. fur bereits kennengelernte Exceptions:
+
+public class NumbersArray {
+public static void main(String{] args) {
+int{] numbers = {10,20,30,40,50);
+
+for(int n=0;n <= numbers.length; n++) {
+‘System.out.printIn(numbers{n]);
+}
+
+Exception in thread “main” java.lang.ArrayindexOutOfBoundsException: 5
+at exceptions. NumbersArray.main(NumbersArray.java:10)
+
+EXCEPTIONS
+
+@ Bsp. fur bereits kennengelernte Exceptions:
+> Division durch 0
+= ArithmeticException
+
+> Zugriff auf Null Referenz
+= NullPointerException
+
+> ungiltiger Array Index
+= ArraylndexOutOfBoundsException
+
+EXCEPTIONS
+
+@ Bsp. fur bereits kennengelernte Exceptions:
+
+public class NameRegister {
+
+private List<String> names;
+
+public void addName(String name) {
+names.add(name);
+
+}
+
+public static void main(String{] args) {
+
+NameRegister nr = new NameRegister();
+nraddName("Max Mustermann");
+
+Exception in thread "main" java.lang.NullPointerException
+
+at exceptions. NameRegister.addName(NameRegister.java:10)
+
+at exceptions. NameRegister.main(NameRegister.java:17)
+
+EXCEPTION HANDLING Va
+
+@ Mechanismus der
+> normalen Code von Fehlerbehandlung klar trennt
+> den Umgang mit Ausnahmesituationen
+sicherstellt
+= auf Fehler reagieren
+> Aufschluss dariiber gibt:
+= WAS passiert ist (Art des Fehlers)
+= WO der Fehler aufgetreten ist (Zeile im Code)
+= WARUM der Fehler aufgetreten ist Beschreibung
+
+
+
+EXCEPTION HANDLING
+
+@ ander Stelle, wo der Fehler auftritt, wird eine
+Exception ausgelést (,,werfen’ >,,throw“)
+
+@ ander Stelle, wo der Fehler behandelt werden
+soll, wird die Exception verarbeitet
+(,fangen >,,catch“)
+
+® zwischen dem Auftreten <-> Verarbeitung von
+Ausnahmen kénnen mehrere Methoden liegen
+die evt. auch ,ibersprungen werden
+(siehe call stack bzw. stack trace)
+
+EXCEPTION SYNTAX >
+
+@ Java Language Keywords
+
+keyword Bedeutung / Funktion
+try try Block umschlie&t kritischen Code
+
+catch catch Block zur Behandlung bestimmter
+Exceptions im Fehlerfall
+
+finally finally Block fir Code der jedenfalls ausgefiihrt
+werden muss, egal ob Fehler auftritt oder nicht
+
+throw throw lést eine Exception aus und signalisiert
+damit Ausnahmesituationen bzw. Fehler
+
+throws throws als Zusatz bei Methodendeklaration zeigt
+médgliche Exceptions an, die auftreten k6nnten und
+vom Aufrufer behandelt od. weiter delegiert werden
+
+EXCEPTION HANDLING >
+
+®@ einfache Fehlerbehandlung
+
+try{
+
+IITRY BLOCK:
+//any code that may throw an exception
+
+} catch(Exception exc) {
+(//CATCH BLOCK:
+/in this example the handling
+only prints the stack trace information
+excprintStacktrace()
+
+}finally {
+
+/JOPTIONAL FINALLY BLOCK:
+//code to cleanup any resources
+
+EXCEPTION HANDLING >
+
+@ Methodendeklaration signalisiert mogliche
+Exception(s) die auftreten k6nnen
+
+public void doSomething() throws SomeException,... {
+
+// any code that may throw an Exception
+// without caring for it but instead
+// delegate the handling to the caller
+
+
+
+P|
+
+EXCEPTION OBJECTS
+
+@ Exceptions sind ebenfalls Java Objekte
+
+@ daher auch der new Operator beim Erzeugen
+und Werfen der Ausnahme
+> -> throw new StackEmptyException
+
+@ unterstiitzen die besprochenen OOP Konzepte
+wie Vererbung und Polymorphismus
+> Ableitung z.B . von java.lang.Exception
+> erbt davon Methoden wie z.B. printStackTrace()
+
+“<, es eon o|
+>
+
+BEISPIEL: STACK
+
+@ Implementierung eines einfachen Stack
+> 2 Methoden: push() und pop()
+= push() legt ein Objekt auf den Stapel
+
+= pop() nimmt das oberste Objekt vom Stapel und liefert
+es zurtick
+
+> maximale GréRe des Stacks soll beschrankt sein
+
+- notes : Note[]
+
+- pointer : int
+
++ Stack(size : int)
++ push(Note note)
++ pop() : Note
+
+BEISPIEL: STACK
+
+@ 2 Ausnahmesituationen:
+> push() obwohl Stack voll -> max. GréRe erreicht
+> pop() trotz leerem Stack -> keine Elemente mehr
+
+@ Umsetzung mittels eigener Exception Types
+> Stack lést Exceptions aus = -> throw new...
+> bei push() wenn Stack voll
+
+> bei pop() wenn Stack leer
+
+-> StackFullException
+-> StackEmptyException
+
+Seite 17
+
+
+BEISPIEL: STACK
+
+@ benutzerdefinierte Exceptions erstellen z.B
+> Ableitung von Basisklasse java.lang.Exception
+> Konstruktor Uberladung fiir unterschiedl. Erzeugung
+
+public class StackEmptyException extends Exception {
+public StackEmptyException() {}
+public StackEmptyException(String msg) {
+
+super(msg);
+
+}
+
+EXCEPTION KEYWORDS
+
+@ throws
+> als Teil der Methodendeklaration
+
+> signalisiert dem Aufrufer potentielle Exceptions
+vom angegeben Typ die auftreten konnen
+
+public void push(Note note) throws StackFullException {
+
+//code here that may throw StackFullException
+
+EXCEPTION KEYWORDS
+
+@ throw
+> Auslésen (,,werfen“) einer Exception im Fehlerfall
+> WO? An der Stelle des Auftratens der Ausnahme
+
+//in case the underlying array is already full
+if(pointer == notes.length-1) {
+throw new StackFullException(“Fehlermeldung...”);
+
+}
+
+BEISPIEL: STACK
+
+public void push(Note note) throws StackFullException {
+
+if(pointer == notes.length-1) {
+throw new StackFullException(notes.length);
+
+}
+
+notes[++pointer] = note;
+
+}
+public Note pop() throws StackEmptyException {
+
+if(pointer == -1) {
+throw new StackEmptyException("cannot pop stack");
+}
+Note n = notes[pointer];
+notes[pointer--] = null;
+return n;
+
+
+
+EXCEPTION KEYWORDS
+
+@ try & catch
+> kritischen Code Bereich mit try Block einschlieBen
+
+> auf potentielle Ausnahmen reagieren bzw . diese
+geeignet im catch Block behandeln
+
+try{
+stack.push(...); //may throw StackFullException
+
+catch (StackFullException e) {
+//handle the exception here
+
+}
+
+EXCEPTION KEYWORDS
+
+@ finally
+> WICHTIG: fiir den Fall das verwendete Resourcen
+wieder freigegeben werden mussen
+
+= (z.B. gedffnete Dateien, Netzwerkverbindung,
+Datenbankverbindung, etc.)
+
+> Beispiel: Methode 6ffnet File zum Lesen und es
+kommt zu IOException -> gedffnete Datei muss
+wieder geschlossen werden
+
+@ finally
+
+> sofern gewisse Code Teile jedenfalls ausgefiihrt
+werden miissen unabhangig ob Ausnahmen
+auftreten od. nicht
+
+> Variante 1: try > catch > finally
+> Variante 2: try > finally
+
+CAMPUS
+
+EXCEPTION KEYWORDS ,
+
+@ finally
+try try
+doSomeThing(); : doSomeThing();
+catch (SomeException e) Hae
+handleException(); cleanup();
+finally
+cleanup();
+
+}
+
+
+
+BEISPIEL: STACK
+
+public static void main(String[] args) {
+
+int numNotes = 10;
+
+Stack stack = new Stack(numNotes);
+
+try{
+stack.push(new Note(LocalDate.now(), "TODO", "DESC"));
+System.out.printIn(stack.pop());
+for(int i=0; i < numNotes; i++) {
+
+stack.push(new Note(LocalDate.now/(),
+"TODO"+(i+1),"DESC"+(i+1)));
+
+}
+System.out.printIn(stack.pop());
+System.out.printIn(stack.pop());
+
+} catch (StackEmptyException e) {
+e.printStackTrace();
+
+} catch (StackFullException e) {
+e.printStackTrace();
+
+}
+
+EXCEPTIONS STACKTRACE
+
+try{
+//stack's capacity is only e.g. 2 notes
+stack.push(new Note(LocalDate.now(),"TODO1", "DESC1"));
+stack.push(new Note(LocalDate.now(),""TODO2","DESC2"));
+//then 3rd push causes exception
+stack.push(new Note(LocalDate.now(),""TODO3", "DESC3"));
+} catch (StackFullException e) {
+e.printStackTrace();
+}
+
+> exceptions.stack.StackFullException:
+error: stack is full - max size is: 2
+at exceptions.stack.Stack.push(Stack.java:16)
+at exceptions.stack.StackDemoError.main(StackDemoError.java:23)
+
+EXCEPTIONS STACKTRACE
+
+try{
+//pop from empty stack causes exception
+stack.pop();
+
+} catch (StackEmptyException e) {
+e.printStackTrace();
+
+}
+
+> exceptions.stack.StackEmptyException:
+error: cannot pop the empty stack
+at exceptions.stack.Stack.pop(Stack.java:27)
+at exceptions.stack.StackDemoError.main(StackDemoError.java:14)
+
+EXCEPTIONS STACKTRACE
+
+@ StackTrace -> exc.printStackTrace
+
+Methode?-
+
+Welche Exception (Typ)
+wurde ausgelést?
+
+Wo im
+Sourcecode?
+java.lang.NullPointerExcept
+at Maip.methodeDrei(Main.java:42)
+at Majn.methodeZwei(Main.java:36)
+at Main.methodeEins(Main.java:32)
+jain.main(Main.java:27)
+
+=
+Klasse?
+
+‘Aufgerufen von welchen
+anderen Methoden?.
+
+
+
+CAMPUS
+
+EXCEPTION KEYWORDS >
+
+@ WAS... ist passiert
+> Art des Fehlers
+> aus Klasse der Exception ableitbar
+= StackFullException
+= StackEmptyException
+
+= etc.
+
+EXCEPTION KEYWORDS
+
+@ WO... ist der Fehler aufgetreten
+> steht detailiert im StackTrace
+> Namen der Klassen bzw . Methoden
+
+> Zeilennummern vom Quellcode
+(sofern das Programm mit Debug Infos kompiliert wurde)
+
+@ WARUM... ist der Fehler aufgetreten
+> mehr Details zur Fehlerursache
+> aus Message der Exception ablesbar
+= z.B: stack is full max size is 2
+
+Seite 32
+
+EXCEPTION HIERARCHIEN = >
+
+@ Ableitung
+
+> is-a Beziehung auch fiir Exceptions anwendbar
+
+StackFullException
+
+StackEmptyException
+
+CVCFCDTIHAL LIICDADFLIICNAI . >|
+
+Y QED
+CVFCDTIHNAL LIICDADFLIICNI 7 >
+
+
+
+@ Ableitung
+
+> gemeinsame Basisklasse StackException méglich
+
+StackException
+
+StackFullException StackEmptyException
+
+CAMPU:
+
+EXCEPTION HIERARCHIEN
+
+@ Nachteil
+
+> falls doch andere Behandlung erforderlich misste
+man innerhalb des catch Blocks manuell
+differenzieren (instanceof / casting)
+
+> wenn nur die Basisklasse (=StackException)
+verfiigbar dann fehit Detailinformation >
+Informationsverlust und keine sinnvolle
+Differenzierung mdglich
+
+>
+
+®@ Vorteil
+
+> einfache / ktirzere Fehlerbehandlung méglich
+
+> statt konkretem Subtype ein catch von
+Basisklasse
+
+try{
+stack.push(new Note(LocalDate.now/(),
+"TODO","DESC"));
+System.out.printIn(stack.pop());
+System.out.printIn(stack.pop());
+} catch (StackException e) {
+e.printStackTrace();
+
+}
+i en)
+
+EXCEPTION HIERARCHIEN >
+
+@ auch Mischformen sind méglich
+
+try{
+
+stack.push(new Note(LocalDate.now/(),
+"TODO","DESC"));
+
+System.out.printIn(stack.pop());
+System.out.printIn(stack.pop());
+
+} catch (StackEmptyException e) {
+e.printStackTrace();
+
+} catch (StackException e) {
+e.printStackTrace();
+
+uy
+
+Seite 37
+
+
+EXCEPTION HIERARCHIEN
+
+@ mehrere Catch-Blécke: Welcher gilt/wird
+
+ausgefihrt?
+
+> ausgefiihrt wird jedenfalls nur einer
+
+> der 1. der basierend auf dem tatsachlichen Typ
+der geworfenen Exception in Frage komm
+
+> WICHTIG: spezifischere Typen immer zuerst (d.h.
+weiter oben) anfthren, weil ein allgemeinerer
+Typ den spezifischeren Typ Uberdecken wurde
+> Compiler Fehler
+
+@ Bsp. 1: Welcher Catch-Block wird ausgefiihrt?
+
+try{
+Stack stack = new Stack(10);
+int i = 0;
+while(i <= 10) {
+stack.push(new Note(...));
+
+}
+stack.pop();
+
+} catch (StackFullException e) {
+System.err.printIn("stack was full");
+
+} catch (StackEmptyException e) {
+System.err.printIn("stack was empty");
+
+EXCEPTION HIERARCHIEN
+
+@ Bsp. 1: Welcher Catch-Block wird ausgefiihrt?
+
+try{
+Stack stack = new Stack(10);
+int i=0;
+while(i <= 10) {
+stack.push(new Note(...));
+}
+stack.pop();
+} catch (StackFullException e) {
+System.err.printIn("stack was full");
+} catch (StackEmptyException e) {
+System.err.printin("stack was empty");
+
+}
+
+}
+
+EXCEPTION HIERARCHIEN
+
+@ Bsp. 2: Welcher Catch-Block wird ausgefiihrt?
+
+try {
+Stack stack = new Stack(10);
+stack.pop();
+while(true) {
+stack.push(new Note(...));
+
+}
+
+} catch (StackFullException e) {
+System.err.printIn("stack was full");
+
+} catch (StackEmptyException e) {
+System.err.printin("stack was empty");
+
+}
+
+
+
