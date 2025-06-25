@@ -1,0 +1,24 @@
+------ Neue Session gestartet ------
+Server: Hallo Client!
+Server: Bitte Buchstaben eingeben: h - Hilfe bekommen, q - Programm beenden
+Client: g
+Server: Ungültige Eingabe
+Client: h
+Server: Das ist die Hilfe
+Client: h
+Server: Das ist die Hilfe
+Client: 
+Server: Ungültige Eingabe
+Client: h
+Server: Das ist die Hilfe
+Client: q
+Server: Auf Wiedersehen
+------ Session beendet ------
+------ Neue Session gestartet ------
+Server: Hallo Client!
+Server: Bitte Buchstaben eingeben: h - Hilfe bekommen, q - Programm beenden
+Client: hhh
+Server: Ungültige Eingabe
+Client: q
+Server: Auf Wiedersehen
+------ Session beendet ------

@@ -1,0 +1,19 @@
+Client verbunden und Begrüßung gesendet.
+Server: Server sagt: Hallo vom Client
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: katja
+Server: Server sagt: katja
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: exotext ohne end
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: exotext ohne end
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!

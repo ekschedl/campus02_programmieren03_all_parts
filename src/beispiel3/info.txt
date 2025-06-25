@@ -1,0 +1,40 @@
+1) HerrFuchsSerevr – Dein Client zu bernhardfuchs.at
+➡️ Du verbindest dich über das Internet mit dem Server bernhardfuchs.at am Port 40061.
+
+✅ Danach:
+	•	Du liest Begrüßung vom Server
+	•	Sendest "hi from Katja"
+	•	Bekommst Antwort
+	•	Sendest "END__" um Verbindung zu beenden
+
+Korrekt?
+	•	Ja, ABER das funktioniert nur, wenn am Server unter dieser Adresse ein passendes Server-Programm läuft, das auf Port 40061 aktiv ist.
+	•	Wenn dort kein Server läuft, bekommst du eine Fehlermeldung (z.B. Connection refused).
+
+⸻
+2) ClientToServer – Dein lokaler Test-Client
+
+Was passiert dort:
+
+✅ Du baust eine Verbindung zu einem Server auf dem eigenen Rechner (localhost)
+➡️ Du musst vorher selbst einen Server gestartet haben, der auf Port 9090 lauscht.
+
+✅ Danach:
+	•	Begrüßung vom Server empfangen
+	•	Du sendest "TIME"
+	•	Antwort vom Server empfangen
+	•	Sendest "END__" um sauber zu beenden
+
+Korrekt?
+	•	Die Struktur ist technisch korrekt.
+	•	Voraussetzung: Du hast auf dem gleichen PC den passenden Server laufen (z.B. ListenToSingleClient).
+
+
+FAZIT:
+	HerrFuchsSerevr
+    Verbindung zu bernhardfuchs.at
+    Muss ein Server von außen erreichbar sein
+
+    ClientToServer
+    Verbindung zu eigenem PC (localhost)
+    Du musst selbst den Server lokal starten

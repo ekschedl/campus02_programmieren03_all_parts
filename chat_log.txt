@@ -525,3 +525,72 @@
 <--- User 11: 'hi'
 ---> hihi
 <--- User 11: 'hihi'
+Ich: Hallo vom Client
+Server: Server sagt: Hallo vom Client
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: jakak
+Server: Server sagt: jakak
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: katja
+Server: Server sagt: katja
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: speihcsspeichern
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: speihcsspeichern
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: end
+Server: Server sagt: end
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!

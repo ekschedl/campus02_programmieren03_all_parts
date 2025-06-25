@@ -1,0 +1,10 @@
+Server: Server sagt: Hallo vom Client
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Ich: test 2
+Server: Server sagt: test 2
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+Server: Server sagt: Hintergrund-Thread: Ich lebe noch!
+--- Chat beendet ---

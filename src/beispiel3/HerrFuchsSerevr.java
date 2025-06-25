@@ -28,7 +28,7 @@ public class HerrFuchsSerevr {
             );
 
             System.out.println("Send command:__ " + command + " __to Server"); // Infoausgabe
-            // Sendet den eigentlichen Befehl an den Server (z. B. "hi from Katja")
+            // Sendet den eigentlichen Befehl an den Server (z.B. "hi from Katja")
             bufferedWriter.write(command);
             bufferedWriter.newLine(); // wichtig: neue Zeile senden, damit der Server weiß, dass die Nachricht zu Ende ist
             bufferedWriter.flush(); // sorgt dafür, dass alles wirklich geschickt wird
@@ -39,7 +39,7 @@ public class HerrFuchsSerevr {
             System.out.println("End of connection__"); // Infoausgabe: Verbindung wird beendet
 
             // Sendet "END__" an den Server, um die Verbindung sauber zu schließen (Serverseitig definierte Beendigungsnachricht)
-            bufferedWriter.write("END__");
+            bufferedWriter.write("END");
             bufferedWriter.newLine(); // wichtig: neue Zeile senden
             bufferedWriter.flush(); // schickt das tatsächlich raus
 
