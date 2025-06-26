@@ -1,0 +1,6 @@
+<--- DATEN VON CHAT: User 15: 'Ich bin ein Bot und es ist Di 28 Mai 2024 15:50:05 CEST'
+<--- DATEN VON CHAT: User 15: 'Ich bin ein Bot und es ist Di 28 Mai 2024 15:50:29 CEST'
+---> DATEN GESENDET VON USER: test
+<--- DATEN VON CHAT: User 15: 'Ich bin ein Bot und es ist Di 28 Mai 2024 15:50:53 CEST'
+---> DATEN GESENDET VON USER: test
+---> DATEN GESENDET VON USER: ende

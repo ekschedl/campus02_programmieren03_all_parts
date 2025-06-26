@@ -1,8 +1,8 @@
+package _THREADS___.F_Threads_gemeinsam_erarbeitet.demo01singlethread;
 
 import java.io.File;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+
+public class main2 {
     public static void main(String[] args) {
         // readFileInformation("/Users/kaaatkina/CAMPUS02_2025/FUCHS/Programmieren3/test.txt");
 
@@ -17,8 +17,5 @@ public class Main {
         }
 
 
-    }}
-
-
-
-//System.lineSeparator();
+    }
+}

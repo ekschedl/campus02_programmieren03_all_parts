@@ -25,7 +25,7 @@ geplanten Programmablauf auftreten k6nnen
 
 public class DemoExceptions {
 
-public static void main(String{] args) {
+public static void UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(String{] args) {
 
 > Zustande die verhindern , dass das Programm int =10;
 seiner Aufgabe ungehindert nachkommen kann wise
@@ -38,9 +38,9 @@ return it / i2;
 
 System.out.printin(doDivision(a, b));
 
-Exception in thread "main" java.lang.ArithmeticException: / by zero
+Exception in thread "UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main" java.lang.ArithmeticException: / by zero
 ) at exceptions.DemoExceptions.doDivision(DemoExceptions.java:15)
-at exceptions.DemoExceptions.main(DemoExceptions.java:10)
+at exceptions.DemoExceptions.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(DemoExceptions.java:10)
 
 
 
@@ -49,15 +49,15 @@ EXCEPTIONS
 @ Bsp. fur bereits kennengelernte Exceptions:
 
 public class NumbersArray {
-public static void main(String{] args) {
+public static void UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(String{] args) {
 int{] numbers = {10,20,30,40,50);
 
 for(int n=0;n <= numbers.length; n++) {
 ‘System.out.printIn(numbers{n]);
 }
 
-Exception in thread “main” java.lang.ArrayindexOutOfBoundsException: 5
-at exceptions. NumbersArray.main(NumbersArray.java:10)
+Exception in thread “UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main” java.lang.ArrayindexOutOfBoundsException: 5
+at exceptions. NumbersArray.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(NumbersArray.java:10)
 
 EXCEPTIONS
 
@@ -84,16 +84,16 @@ names.add(name);
 
 }
 
-public static void main(String{] args) {
+public static void UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(String{] args) {
 
 NameRegister nr = new NameRegister();
 nraddName("Max Mustermann");
 
-Exception in thread "main" java.lang.NullPointerException
+Exception in thread "UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main" java.lang.NullPointerException
 
 at exceptions. NameRegister.addName(NameRegister.java:10)
 
-at exceptions. NameRegister.main(NameRegister.java:17)
+at exceptions. NameRegister.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(NameRegister.java:17)
 
 EXCEPTION HANDLING Va
 
@@ -348,7 +348,7 @@ cleanup();
 
 BEISPIEL: STACK
 
-public static void main(String[] args) {
+public static void UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(String[] args) {
 
 int numNotes = 10;
 
@@ -389,7 +389,7 @@ e.printStackTrace();
 > exceptions.stack.StackFullException:
 error: stack is full - max size is: 2
 at exceptions.stack.Stack.push(Stack.java:16)
-at exceptions.stack.StackDemoError.main(StackDemoError.java:23)
+at exceptions.stack.StackDemoError.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(StackDemoError.java:23)
 
 EXCEPTIONS STACKTRACE
 
@@ -405,7 +405,7 @@ e.printStackTrace();
 > exceptions.stack.StackEmptyException:
 error: cannot pop the empty stack
 at exceptions.stack.Stack.pop(Stack.java:27)
-at exceptions.stack.StackDemoError.main(StackDemoError.java:14)
+at exceptions.stack.StackDemoError.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(StackDemoError.java:14)
 
 EXCEPTIONS STACKTRACE
 
@@ -422,7 +422,7 @@ java.lang.NullPointerExcept
 at Maip.methodeDrei(Main.java:42)
 at Majn.methodeZwei(Main.java:36)
 at Main.methodeEins(Main.java:32)
-jain.main(Main.java:27)
+jain.UE32._THREADS___.F_Threads_gemeinsam_erarbeitet.main(Main.java:27)
 
 =
 Klasse?
