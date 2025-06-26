@@ -1,9 +1,9 @@
-package _NETZWERK___.testpruefung_loesung_src;
+package _NETZWERK___.FUCHS_Test_pruefung_loesung_src;
 
 import java.io.*;
 import java.net.Socket;
 
-public class Main {
+public class Main_Client {
 /*
 ✅ Du sendest Texte zum Server → landen auf Konsole & im Logfile
 ✅ Du empfängst Texte vom Server → landen auf Konsole & im Logfile
@@ -36,7 +36,7 @@ public class Main {
         //ich übergebe dem Thread Objekt das logfoile im Comstructor
         //Startet einen extra Thread, der unabhängig im Hintergrund läuft.
         //Dieser MyFilesizeThread überprüft regelmäßig die Größe der Logdatei (steht in deiner anderen Klasse)
-        Thread logfilesizeThread = new Thread(new _NETZWERK___.testpruefung_loesung_src.MyFilesizeThread(logfile));
+        Thread logfilesizeThread = new Thread(new _NETZWERK___.FUCHS_Test_pruefung_loesung_src.MyFilesizeThread(logfile));
         logfilesizeThread.start();
 
         while (true) {//Solange das Programm läuft, wiederholt sich Folgendes:

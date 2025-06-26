@@ -1,4 +1,4 @@
-package HerrFuchs_ServerVerbinden;
+package _NETZWERK___.HerrFuchs_ServerVerbinden;
 
 import java.io.*;
 import java.net.Socket;

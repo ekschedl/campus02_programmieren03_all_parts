@@ -1,0 +1,13 @@
+Client [/127.0.0.1]: text 2
+Client [/127.0.0.1]: exit
+Client [/0:0:0:0:0:0:0:1]: huiii
+Client [/127.0.0.1]: hhhuii
+Client [/0:0:0:0:0:0:0:1]: lflfgfl
+Client [/127.0.0.1]: lich bin 1
+Client [/0:0:0:0:0:0:0:1]: lich bin 1
+Client [/0:0:0:0:0:0:0:1]: lich bin 2
+Client [/0:0:0:0:0:0:0:1]: lich bin 3
+Client [/127.0.0.1]: client1
+Client [/127.0.0.1]: client1
+Client [/0:0:0:0:0:0:0:1]: client3
+Client [/0:0:0:0:0:0:0:1]: client4

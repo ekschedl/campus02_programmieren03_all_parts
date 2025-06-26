@@ -1,4 +1,4 @@
-package _NETZWERK___.testpruefung_loesung_src;
+package _NETZWERK___.FUCHS_Test_pruefung_loesung_src;
 
 public class LogFileException extends Exception{
     //diese Klasse wird in der Aufgabenstellung nicht benötigt,

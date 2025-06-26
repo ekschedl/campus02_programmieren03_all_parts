@@ -1,12 +1,19 @@
-package _NETZWERK___.testpruefung_loesung_src;
+package _NETZWERK___.FUCHS_Test_pruefung_loesung_src;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+/*
+✅ Du verwendest new ServerSocket(9090); → das bedeutet, dieses Programm ist der Server.
+✅ Der Server wartet auf eingehende Verbindungen: serverSocket.accept();
+✅ Danach liest er Nachrichten vom Client und schickt sie wieder zurück → Echo-Server-Verhalten*/
 public class MainLokalerEchoServer {
     public static void main(String[] args) {
         try {
+            /*	•	Server öffnet ServerSocket zum Lauschen
+                •	Client baut mit Socket Verbindung auf
+                •	Server bekommt über accept() ebenfalls ein Socket für den einzelnen Client*/
+
             ServerSocket serverSocket = new ServerSocket(9090);
             System.out.println("Server läuft auf Port 9090, wartet auf Verbindungen...");
 

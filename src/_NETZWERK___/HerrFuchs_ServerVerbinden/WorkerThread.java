@@ -1,4 +1,4 @@
-package HerrFuchs_ServerVerbinden;
+package _NETZWERK___.HerrFuchs_ServerVerbinden;
 
 public class WorkerThread implements Runnable {
 

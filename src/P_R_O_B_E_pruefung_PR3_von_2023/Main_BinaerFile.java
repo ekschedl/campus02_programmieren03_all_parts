@@ -2,15 +2,16 @@ package P_R_O_B_E_pruefung_PR3_von_2023;
 
 import java.io.*;
 
+//Erstellen Sie eine Main Klasse mit einer main-Funktion.
+//• Die main-funktion hat folgenden Ablauf:
+//o Öffnen einer neuen Datei „hallo.txt“
+//o Schreiben Sie folgende Binärzahl in die Datei: 43 (Dezimal), in Hex: 0x2B.
+//o Dieses Zeichen soll 20-mal in die Datei geschrieben werden
+
 public class Main_BinaerFile {
 
     public static void main(String[] args) {
 
-        //Erstellen Sie eine Main Klasse mit einer main-Funktion.
-        //• Die main-funktion hat folgenden Ablauf:
-        //o Öffnen einer neuen Datei „hallo.txt“
-        //o Schreiben Sie folgende Binärzahl in die Datei: 43 (Dezimal), in Hex: 0x2B.
-        //o Dieses Zeichen soll 20-mal in die Datei geschrieben werden
 
         File file = new File("hello.txt");
 

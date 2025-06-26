@@ -1,4 +1,4 @@
-package chat_homework;
+package _NETZWERK___.chat_homework;
 
 import java.io.*;
 import java.net.Socket;

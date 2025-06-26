@@ -1,5 +1,5 @@
 
-package _NETZWERK___.testpruefung_loesung_src;
+package _NETZWERK___.FUCHS_Test_pruefung_loesung_src;
 
 import java.io.File;
 
